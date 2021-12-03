@@ -5,8 +5,8 @@ import statistics
 import plotly.graph_objects as go
 import pandas as pd
 
-df = pd.read_csv("StudentsPerformance.csv"); 
-file_data= df['math score'].tolist()
+df = pd.read_csv("StudentsPerformance.csv")
+data = df["reading score"].tolist()
 
 mean = statistics.mean(file_data)
 mode = statistics.mode(file_data)
